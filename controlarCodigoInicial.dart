@@ -1,4 +1,5 @@
 import 'dart:io';
+//gabi
 //Essa é a versão inicial do código, já visulizada pelo prof Helio
 void main(List<String> args) {
   int opcaomenu;
@@ -54,7 +55,8 @@ void main(List<String> args) {
   //implementação dos if do que o sistema fará
   if (opcaomenu == 1) verificarGlicemia(estaEmJejum, valorGlicemia);
   if (opcaomenu == 2) verificarPressao(valorPressao);
-}
+} 
+//gabi ate aqui
 
 // estou verificando a glicemia se a pessoa não esta em jejum
 String verificarGlicemiaNaoJejum(int valorGlicemia) {
