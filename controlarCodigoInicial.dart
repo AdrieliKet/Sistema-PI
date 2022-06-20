@@ -56,42 +56,6 @@ void main(List<String> args) {
   if (opcaomenu == 2) verificarPressao(valorPressao);
 }
 
-// ignore: missing_return
-String verificarPressao(double valorPressao) {
-  if (valorPressao == 120.60) return 'Valor ideal';
-  if (valorPressao < 120.60) return ('Abaixo da média');
-  if (valorPressao > 130.85 && valorPressao < 139.89)
-    return ('Normal Limítrofe');
-  if (valorPressao >= 140.90 && valorPressao <= 159.99)
-    return ('Hipertensão leve (estágio 1) ');
-  if (valorPressao >= 160.100 && valorPressao < 180.110)
-    return ('Hipertensão moderada (estágio 2)');
-  if (valorPressao >= 180.110) return ('Hipertensão grave (estágio 3)');
-}
-
-// a função anonima calcular oq fazer de acordo a glicemia, será uma orientação
-
-void verificarGlicemia(int estaEmJejum, int valorGlicemia) {
-  if (estaEmJejum == 1) verificarGlicemiaJejum(valorGlicemia);
-  if (estaEmJejum == 2) verificarGlicemiaNaoJejum(valorGlicemia);
-}
-
-// ignore: missing_return
-String verificarGlicemiaJejum(int valorGlicemia) {
-  if (valorGlicemia < 70) return ('Hipoglicemia');
-  if (valorGlicemia >= 70 && valorGlicemia <= 100) return ('Normal');
-  if (valorGlicemia > 100 && valorGlicemia <= 126) return ('Pré-Diabetes');
-  if (valorGlicemia > 126) throw Exception('Diabetes');
-}
-
-// ignore: missing_return
-String verificarGlicemiaNaoJejum(int valorGlicemia) {
-  if (valorGlicemia < 70) return ('Hipoglicemia');
-  if (valorGlicemia >= 70 && valorGlicemia <= 140) return ('Normal');
-  if (valorGlicemia > 140 && valorGlicemia <= 200) return ('Pré-Diabetes');
-  if (valorGlicemia > 200) return ('Diabetes');
-}
-
 // estou verificando a glicemia se a pessoa não esta em jejum
 String verificarGlicemiaNaoJejum(int valorGlicemia) {
   if (valorGlicemia < 70) return ('Hipoglicemia');
