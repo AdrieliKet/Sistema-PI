@@ -74,3 +74,17 @@ String verificarGlicemiaJejum(int valorGlicemia) {
   if (valorGlicemia > 100 && valorGlicemia <= 126) return ('Pré-Diabetes');
   if (valorGlicemia > 126) throw Exception('Diabetes');
 }
+
+//rafaela 
+String verificarPressao(double valorPressao) {
+  if (valorPressao == 120.60) return 'Valor ideal';
+  if (valorPressao < 120.60) return ('Abaixo da média');
+  if (valorPressao > 130.85 && valorPressao < 139.89)
+    return ('Normal Limítrofe');
+  if (valorPressao >= 140.90 && valorPressao <= 159.99)
+    return ('Hipertensão leve (estágio 1) ');
+  if (valorPressao >= 160.100 && valorPressao < 180.110)
+    return ('Hipertensão moderada (estágio 2)');
+  if (valorPressao >= 180.110) return ('Hipertensão grave (estágio 3)');
+}
+
