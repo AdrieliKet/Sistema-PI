@@ -67,3 +67,10 @@ String verificarGlicemiaNaoJejum(int valorGlicemia) {
   if (valorGlicemia > 200) return ('Diabetes');
 }
 
+// estou verificando a glicemia se a pessoa esta em jejum
+String verificarGlicemiaJejum(int valorGlicemia) {
+  if (valorGlicemia < 70) return ('Hipoglicemia');
+  if (valorGlicemia >= 70 && valorGlicemia <= 100) return ('Normal');
+  if (valorGlicemia > 100 && valorGlicemia <= 126) return ('Pré-Diabetes');
+  if (valorGlicemia > 126) throw Exception('Diabetes');
+}
