@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "310194490482",
+    "project_id": "sistema-pi",
+    "storage_bucket": "sistema-pi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:310194490482:android:9f6bfaec063e284259c6eb",
+        "android_client_info": {
+          "package_name": "com.example.controlar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "310194490482-p9aso2ba081cj60n2voc4ea9u4f9gt5t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkTYXeu3mU2pe9uxja6ulXhBdGp5gu2Xo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "310194490482-p9aso2ba081cj60n2voc4ea9u4f9gt5t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
